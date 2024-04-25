@@ -1,0 +1,213 @@
+T4DEC 32241:209.344   SEGGER J-Link V7.96c Log File
+T4DEC 32241:209.344   DLL Compiled: Apr  2 2024 12:30:42
+T4DEC 32241:209.344   Logging started @ 2024-04-25 04:40
+T4DEC 32241:209.344   Process: C:\Program Files (x86)\Atmel\Studio\7.0\atbackend\atbackend.exe
+T4DEC 32241:209.344 - 8025.689ms
+T4DEC 32241:217.536 JLINK_ExecCommand("Device = ATSAMD21G18A", ...). 
+T4DEC 32241:217.536   Device "ATSAMD21G18A" selected.
+T4DEC 32241:217.536 - 0.497ms returns 0x00
+T4DEC 32241:231.872 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T4DEC 32241:231.872 - 0.553ms returns 0x00
+T4DEC 32241:231.872 JLINK_SetSpeed(4000)
+T4DEC 32241:231.872 - 0.064ms
+T4DEC 32241:231.872 JLINK_ResetPullsRESET(OFF)
+T4DEC 32241:231.872 - 0.011ms
+T4DEC 32241:231.872 JLINK_Connect()
+T4DEC 32241:231.872   InitTarget() start
+T4DEC 32241:231.872    J-Link Script File: Executing InitTarget()
+T4DEC 32241:231.872   InitTarget()
+T4DEC 32241:233.920   InitTarget() end - Took 2.01ms
+T4DEC 32241:233.920   Found SW-DP with ID 0x0BC11477
+T4DEC 32241:233.920   DPIDR: 0x0BC11477
+T4DEC 32241:233.920   CoreSight SoC-400 or earlier
+T4DEC 32241:233.920   Scanning AP map to find all available APs
+T4DEC 32241:233.920   AP[1]: Stopped AP scan as end of AP map has been reached
+T4DEC 32241:233.920   AP[0]: AHB-AP (IDR: 0x04770031)
+T4DEC 32241:233.920   Iterating through AP map to find AHB-AP to use
+T4DEC 32241:238.016   AP[0]: Core found
+T4DEC 32241:238.016   AP[0]: AHB-AP ROM base: 0x41003000
+T4DEC 32241:238.016   CPUID register: 0x410CC601. Implementer code: 0x41 (ARM)
+T4DEC 32241:238.016   Found Cortex-M0 r0p1, Little endian.
+T4DEC 32241:238.016   -- Max. mem block: 0x00002BA8
+T4DEC 32241:238.016   Cortex-M: The connected J-Link (S/N 801048258) uses an old firmware module: V1 (current is 2)
+T4DEC 32241:238.016   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4DEC 32241:238.016   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T4DEC 32241:238.016   CPU_ReadMem(4 bytes @ 0xE0002000)
+T4DEC 32241:238.016   FPUnit: 4 code (BP) slots and 0 literal slots
+T4DEC 32241:238.016   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T4DEC 32241:238.016   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T4DEC 32241:242.112   CPU_ReadMem(4 bytes @ 0xE0001000)
+T4DEC 32241:242.112   CPU_WriteMem(4 bytes @ 0xE0001000)
+T4DEC 32241:242.112   CoreSight components:
+T4DEC 32241:242.112   ROMTbl[0] @ 41003000
+T4DEC 32241:242.112   CPU_ReadMem(64 bytes @ 0x41003000)
+T4DEC 32241:242.112   CPU_ReadMem(32 bytes @ 0xE00FFFE0)
+T4DEC 32241:242.112   [0][0]: E00FF000 CID B105100D PID 000BB4C0 ROM Table
+T4DEC 32241:242.112   ROMTbl[1] @ E00FF000
+T4DEC 32241:242.112   CPU_ReadMem(64 bytes @ 0xE00FF000)
+T4DEC 32241:242.112   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+T4DEC 32241:244.160   [1][0]: E000E000 CID B105E00D PID 000BB008 SCS
+T4DEC 32241:244.160   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+T4DEC 32241:244.160   [1][1]: E0001000 CID B105E00D PID 000BB00A DWT
+T4DEC 32241:244.160   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+T4DEC 32241:244.160   [1][2]: E0002000 CID B105E00D PID 000BB00B FPB
+T4DEC 32241:244.160   CPU_ReadMem(32 bytes @ 0x41006FE0)
+T4DEC 32241:244.160   [0][1]: 41006000 CID B105900D PID 001BB932 MTB-M0+
+T4DEC 32241:244.160 - 13.936ms returns 0x00
+T4DEC 32241:244.160 JLINK_Halt()
+T4DEC 32241:248.256 - 2.785ms returns 0x00
+T4DEC 32241:248.256 JLINK_JTAG_GetDeviceID(DeviceIndex = 0)
+T4DEC 32241:248.256 - 0.009ms returns 0
+T4DEC 32241:248.256 JLINK_ReadMemU32(0x41002018, 0x1 Items)
+T4DEC 32241:248.256   CPU_ReadMem(4 bytes @ 0x41002018)
+T4DEC 32241:248.256   Data:  05 03 01 10
+T4DEC 32241:248.256 - 0.305ms returns 1 (0x1)
+T4DEC 32241:254.400 JLINK_BeginDownload(Flags = 0x00000000)
+T4DEC 32241:254.400 - 0.011ms
+T4DEC 32241:254.400 JLINK_WriteMem(0x00000000, 0x16F4 Bytes, ...)
+T4DEC 32241:254.400   Data:  C8 20 00 20 C1 12 00 00 BD 12 00 00 BD 12 00 00 ...
+T4DEC 32241:254.400   completely In flash
+T4DEC 32241:254.400 - 0.247ms returns 0x16F4
+T4DEC 32241:254.400 JLINK_WriteMem(0x000016F4, 0x8 Bytes, ...)
+T4DEC 32241:254.400   Data:  01 00 04 00 DD 00 01 00
+T4DEC 32241:254.400   completely In flash
+T4DEC 32241:254.400 - 0.022ms returns 0x8
+T277C 32241:258.496 JLINK_IsHalted()
+T277C 32241:258.496 - 0.289ms returns TRUE
+T277C 32241:258.496 JLINK_GetMOEs(...)
+T277C 32241:258.496   CPU_ReadMem(4 bytes @ 0xE000ED30)
+T277C 32241:258.496 - 0.297ms returns 0x01
+T277C 32241:258.496 JLINK_ReadReg(R15 (PC))
+T277C 32241:258.496   CPU_ReadMem(4 bytes @ 0x41006004)
+T277C 32241:258.496   CPU_ReadMem(4 bytes @ 0xE000ED90)
+T277C 32241:258.496    -- --------------------------------------
+T277C 32241:258.496    -- Flash bank @ 0x00000000: Default: L2 verify disabled because algorithm performs L1 verify
+T277C 32241:258.496    -- Start of determining dirty areas in flash cache
+T277C 32241:258.496    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000000 if necessary
+T277C 32241:258.496    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000100 if necessary
+T277C 32241:258.496    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000200 if necessary
+T277C 32241:258.496    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000300 if necessary
+T277C 32241:258.496    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000400 if necessary
+T277C 32241:258.496    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000500 if necessary
+T277C 32241:258.496    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000600 if necessary
+T277C 32241:258.496    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000700 if necessary
+T277C 32241:258.496    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000800 if necessary
+T277C 32241:258.496    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000900 if necessary
+T277C 32241:258.496    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000A00 if necessary
+T277C 32241:258.496    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000B00 if necessary
+T277C 32241:258.496    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000C00 if necessary
+T277C 32241:258.496    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000D00 if necessary
+T277C 32241:258.496    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000E00 if necessary
+T277C 32241:258.496    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000F00 if necessary
+T277C 32241:258.496    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001000 if necessary
+T277C 32241:258.496    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001100 if necessary
+T277C 32241:258.496    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001200 if necessary
+T277C 32241:258.496    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001300 if necessary
+T277C 32241:258.496    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001400 if necessary
+T277C 32241:258.496    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001500 if necessary
+T277C 32241:258.496    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001600 if necessary
+T277C 32241:258.496    -- End of determining dirty areas
+T277C 32241:258.496    -- Start of preparing flash programming
+T277C 32241:258.496    -- Calculating RAM usage
+T277C 32241:258.496    -- RAM usage = 2884 Bytes
+T277C 32241:258.496    -- Preserving CPU registers
+T277C 32241:258.496    -- Preparing target
+T277C 32241:258.496    -- Preserving target RAM temporarily used for programming
+T277C 32241:274.880    -- Downloading RAMCode
+T277C 32241:291.264    -- Preparing RAMCode
+T277C 32241:297.408    -- End of preparing flash programming
+T277C 32241:299.456    -- CPU speed could not be measured.
+T277C 32241:299.456    -- Start of comparing flash
+T277C 32241:299.456    -- CRC check was estimated as fastest method
+T277C 32241:330.176    -- Comparing range 0x0000 - 0x16FF (23 Sectors, 5 KB), using multi-block CRC calculation
+T277C 32241:342.464    -- CRC does not match for sector 20
+T277C 32241:342.464    -- Comparing range 0x0000 - 0x13FF (20 Sectors, 5 KB), using alternative multi-block CRC calculation
+T277C 32241:348.608    -- All CRCs match
+T277C 32241:348.608    -- Comparing range 0x1500 - 0x16FF (2 Sectors, 512 Bytes), using alternative multi-block CRC calculation
+T277C 32241:352.704    -- All CRCs match
+T277C 32241:352.704    -- End of comparing flash
+T277C 32241:352.704    -- Start of erasing sectors
+T277C 32241:352.704    -- Erasing range 0x00001400 - 0x000014FF (  1 Sector, 256 Bytes)
+T277C 32241:358.848    -- End of erasing sectors
+T277C 32241:358.848    -- Start of flash programming
+T277C 32241:358.848    -- Programming range 0x00001400 - 0x000014FF (  1 Sector, 256 Bytes)
+T277C 32241:358.848    -- End of flash programming
+T277C 32241:358.848    -- 0x1400 - 0x14FF (  1 Sector, 256 Bytes)
+T277C 32241:358.848    -- Start of restoring
+T277C 32241:358.848    -- Restoring RAMCode
+T277C 32241:369.088    -- Restoring target memory
+T277C 32241:381.376    -- Restore target
+T277C 32241:381.376    -- Restoring CPU registers
+T277C 32241:381.376    -- End of restoring
+T277C 32241:381.376    -- Bank 0 @ 0x00000000: 1 range affected (256 bytes)
+T277C 32241:381.376    -- Total: 0.124s (Prepare: 0.041s, Compare: 0.053s, Erase: 0.004s, Program & Verify: 0.006s, Restore: 0.018s)
+T277C 32241:381.376    -- Program & Verify speed: 41 KB/s
+T277C 32241:389.568 - 129.703ms returns 0x0000075A
+T4DEC 32241:389.568 JLINK_EndDownload()
+T4DEC 32241:389.568 - 0.022ms returns 0 (0x0)
+T4DEC 32241:389.568 JLINK_ResetPullsRESET(ON)
+T4DEC 32241:389.568 - 0.011ms
+T4DEC 32241:389.568 JLINK_ResetNoHalt()
+T4DEC 32241:389.568   InitTarget() start
+T4DEC 32241:389.568    J-Link Script File: Executing InitTarget()
+T4DEC 32241:389.568   InitTarget()
+T4DEC 32241:391.616   InitTarget() end - Took 2.40ms
+T4DEC 32241:391.616   Found SW-DP with ID 0x0BC11477
+T4DEC 32241:395.712   DPIDR: 0x0BC11477
+T4DEC 32241:395.712   CoreSight SoC-400 or earlier
+T4DEC 32241:395.712   AP map detection skipped. Manually configured AP map found.
+T4DEC 32241:395.712   AP[0]: AHB-AP (IDR: Not set)
+T4DEC 32241:395.712   AP[0]: Core found
+T4DEC 32241:395.712   AP[0]: AHB-AP ROM base: 0x41003000
+T4DEC 32241:395.712   CPUID register: 0x410CC601. Implementer code: 0x41 (ARM)
+T4DEC 32241:395.712   Found Cortex-M0 r0p1, Little endian.
+T4DEC 32241:395.712   -- Max. mem block: 0x00002860
+T4DEC 32241:395.712   Cortex-M: The connected J-Link (S/N 801048258) uses an old firmware module: V1 (current is 2)
+T4DEC 32241:395.712   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4DEC 32241:397.760   CPU_ReadMem(4 bytes @ 0xE0002000)
+T4DEC 32241:397.760   FPUnit: 4 code (BP) slots and 0 literal slots
+T4DEC 32241:397.760   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T4DEC 32241:401.856   CPU_ReadMem(4 bytes @ 0xE0001000)
+T4DEC 32241:401.856   CoreSight components:
+T4DEC 32241:401.856   ROMTbl[0] @ 41003000
+T4DEC 32241:401.856   CPU_ReadMem(64 bytes @ 0x41003000)
+T4DEC 32241:401.856   CPU_ReadMem(32 bytes @ 0xE00FFFE0)
+T4DEC 32241:401.856   [0][0]: E00FF000 CID B105100D PID 000BB4C0 ROM Table
+T4DEC 32241:401.856   ROMTbl[1] @ E00FF000
+T4DEC 32241:401.856   CPU_ReadMem(64 bytes @ 0xE00FF000)
+T4DEC 32241:401.856   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+T4DEC 32241:401.856   [1][0]: E000E000 CID B105E00D PID 000BB008 SCS
+T4DEC 32241:401.856   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+T4DEC 32241:405.952   [1][1]: E0001000 CID B105E00D PID 000BB00A DWT
+T4DEC 32241:405.952   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+T4DEC 32241:405.952   [1][2]: E0002000 CID B105E00D PID 000BB00B FPB
+T4DEC 32241:405.952   CPU_ReadMem(32 bytes @ 0x41006FE0)
+T4DEC 32241:405.952   [0][1]: 41006000 CID B105900D PID 001BB932 MTB-M0+
+T4DEC 32241:405.952   JLINK_Reset()
+T4DEC 32241:405.952     CPU_ReadMem(4 bytes @ 0x20000000)
+T4DEC 32241:405.952     CPU_WriteMem(4 bytes @ 0x20000000)
+T4DEC 32241:405.952     ResetTarget() start
+T4DEC 32241:405.952      J-Link Script File: Executing ResetTarget()
+T4DEC 32241:405.952     CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T4DEC 32241:405.952     CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T4DEC 32241:405.952     CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T4DEC 32241:408.000     CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4DEC 32241:408.000     CPU_ReadMem(4 bytes @ 0x41002100)
+T4DEC 32241:408.000     CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T4DEC 32241:408.000     ResetTarget() end - Took 3.61ms
+T4DEC 32241:412.096     CPU_WriteMem(4 bytes @ 0xE0002000)
+T4DEC 32241:412.096     CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T4DEC 32241:412.096     CPU_ReadMem(4 bytes @ 0xE0001000)
+T4DEC 32241:414.144     CPU_WriteMem(4 bytes @ 0xE0001000)
+T4DEC 32241:414.144   - 9.134ms
+T4DEC 32241:414.144   JLINK_Go()
+T4DEC 32241:414.144     CPU_ReadMem(4 bytes @ 0xE0001000)
+T4DEC 32241:414.144     CPU_WriteMem(4 bytes @ 0xE0001000)
+T4DEC 32241:414.144     CPU_WriteMem(4 bytes @ 0xE0001004)
+T4DEC 32241:414.144     Memory map 'after startup completion point' is active
+T4DEC 32241:414.144   - 1.585ms
+T4DEC 32241:414.144 - 26.580ms
+T4DEC 32241:424.384 JLINK_Close()
+T4DEC 32241:438.720 - 11.006ms
+T4DEC 32241:438.720   
+T4DEC 32241:438.720   Closed
